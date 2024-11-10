@@ -41,8 +41,8 @@ def read_json(filename, default):
     return r
 
 
-GIT_REPO_URL = "https://github.com/spesmilo/electrum"
-GIT_REPO_ISSUES_URL = "https://github.com/spesmilo/electrum/issues"
+GIT_REPO_URL = "https://github.com/newbitcoin2024/electrum"
+GIT_REPO_ISSUES_URL = "https://github.com/newbitcoin2024/electrum/issues"
 BIP39_WALLET_FORMATS = read_json('bip39_wallet_formats.json', [])
 
 
@@ -91,11 +91,11 @@ class BitcoinMainnet(AbstractNet):
     ADDRTYPE_P2SH = 5
     SEGWIT_HRP = "bc"
     BOLT11_HRP = SEGWIT_HRP
-    GENESIS = "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f"
+    GENESIS = "000000ff07876d775b813db1deed3a27cb6019227cbc7db65c6bec2335336a85"
     DEFAULT_PORTS = {'t': '50001', 's': '50002'}
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
-    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 497000
+    BLOCK_HEIGHT_FIRST_LIGHTNING_CHANNELS = 13000
 
     XPRV_HEADERS = {
         'standard':    0x0488ade4,  # xprv
@@ -117,8 +117,8 @@ class BitcoinMainnet(AbstractNet):
     LN_REALM_BYTE = 0
     LN_DNS_SEEDS = [
         'nodes.lightning.directory.',
-        'lseed.bitcoinstats.com.',
-        'lseed.darosior.ninja',
+        'henicoin.com.',
+        'newbitcoin1.ddns.net',
     ]
 
 
